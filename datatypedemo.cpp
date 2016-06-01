@@ -1,6 +1,7 @@
 #include <iostream.h>
 #include <string>
 
+
 using namespace std;
 string call(bool val)
 {
@@ -17,6 +18,7 @@ return "married";
 }
 int main()
 {
+	const int day=1;
 	int age;
 double sal;
 	char name[25];
@@ -30,6 +32,8 @@ double sal;
 	cout<<"Are you married ? Answer in true or false ";
 	cin>>status;
 	cout<<"Name of the person:"<<name<<"\n age :"<<age<<"\n salary of the person:"<<sal<<"Married:?"<<call(status);
+	cout<<"\n Constant using define "<<position;
+	cout<<"\n Constant declared using keyword const:"<<day;
 	return 0;
 	
 	

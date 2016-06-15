@@ -8,14 +8,7 @@ protected:
 	float sal;
 	std::string name;
 	public:
-		Person(std::string name,int age,float sal)
-		{
-		this->name=	name;
-		this->age=age;
-		this->	sal=sal;
-			std::cout<<"\n Object Created Using Parametrized Constructor ";
-		
-		}
+	
 		Person(void)
 		{
 			std::cout<<"\nObject created";
@@ -29,6 +22,7 @@ protected:
 			std::cin>>age;
 			std::cout<<"\nEnter Your Salary:";
 			std::cin>>sal;
+			std::cin.ignore();
 		}
 	void display()
 		{
@@ -37,9 +31,38 @@ protected:
 };
 int main()
 {
-	Person ps,p1("regis",655,699999);
-	ps.read();
-	ps.display();
-	p1.display();
+	/*
+Person *ptr;
+ptr=new Person[2];
+for(int i=0;i<2;i++)
+{
+	(ptr+i)->read();
+}
+for(int i=0;i<2;i++)
+{
+	(ptr+i)->display();
+}
+delete [] ptr;
+*/
+Person p[3];
+for(int i=0;i<3;i++)
+{
+	p[i].read();
+	
+}
+for(int i=0;i<3;i++)
+{
+	p[i].display();
+}
+
+
+
+
+
+
+
+
+
+
 }
 

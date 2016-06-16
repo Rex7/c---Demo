@@ -17,10 +17,11 @@ class Pointer2Object
 		}
 		void insert()
 		{
-			std::cout<<"\nEnter Name";
-	std::cin>>name;
+	std::cout<<"\nEnter Name";
+	std::getline(std::cin,name);
 	std::cout<<"\nEnter Age:";
 	std::cin>>age;
+	std::cin.ignore();
 			}	
 		void display()
 		{

@@ -93,84 +93,36 @@ public:
 		
 float operator/(semester sem){
 float percentage;
+
 if(this->code==sem.code){
 	std::cout<<"Sorry both are from same semester"<<std::endl;
 }
 else{
-	switch(sem.code)
-	{
-		case 1:
-			if(this->code==2){
-				std::cout<<"\nSemester calculated for percentage are :"<<this->code<<sem.code<<std::endl;
-			}
-			else{
-				std::cout<<"\n Wrong semester entered .... Try Again";
-			}
-			break;
-		case 2:
-			if(this->code==1){
-				std::cout<<"\nSemester calculated for percentage are :"<<this->code<<sem.code<<std::endl;
-			
-			}
-			else{
-				std::cout<<"\n Wrong semester entered .... Try Again";
-			}
-			break;
-		case 3:
-			if(this->code==4){
-				std::cout<<"\nSemester calculated for percentage are :"<<this->code<<sem.code<<std::endl;
-			
-			}
-			else{
-				std::cout<<"\n Wrong semester entered .... Try Again";
-			}
-			break;
-		case 4:
-			if(this->code==3){
-				std::cout<<"\nSemester calculated for percentage are :"<<this->code<<sem.code<<std::endl;
-			
-			}
-			else{
-			std::cout<<"\n Wrong semester entered .... Try Again";
-			}
-		break;
-		case 5:
-			if(this->code==5){
-				std::cout<<"\nSemester calculated for percentage are :"<<this->code<<sem.code<<std::endl;
-	
-			}
-			else{
-				std::cout<<"\n Wrong semester entered .... Try Again";
-			}
-			break;
-		case 6:
-			if(this->code==6){
-				std::cout<<"\nSemester calculated for percentage are :"<<this->code<<sem.code<<std::endl;
-				
-			}
-			else{
-				std::cout<<"\n Wrong semester entered .... Try Again";
-			}
-			break;
-		default:
-			std::cout<<"\nNo Offence, What you entered is bullshit.";
-			break;
-			
-	}//end of switch clause
-}
-}
+if(  this->code==1&&sem.code==2){
+		std::cout<<"\n you reached first and second semester";
+	}
+	else if(this->code==3&&sem.code==4){
+		std::cout<<"\nyour reached 3 and fourth sem";
+	}
+	else if(this->code==5&&sem.code==6){
+		std::cout<<"\nyou reached 5 and 6";
+	}
+	else{
+		std::cout<<"\n you entered wrong data my friend ,try again..";
+	}
+std::cout<<"\nSem.code="<<sem.code<<"\tthis->code="<<this->code;
+}//end of else
+}//end of function 
+
 };//end of class semester
 int main()
 {
 	
 semester s,s1,s2(2),s3(3),s4(4),s5(5),s6(6);
 float percentage;
-
-s4/s6;
-s3/s1;
-s6/s3;
-s1/s6;
-s1/9;
+s1/s1;
+s3/s4;
+s1/s2;
 
 return 0;
 }
